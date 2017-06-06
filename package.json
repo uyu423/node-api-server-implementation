@@ -1,0 +1,49 @@
+{
+  "name": "yowu-open-api-server",
+  "version": "1.0.0",
+  "description": "Yowu's Open APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "localhost": "cross-env NODE_ENV=localhost nodemon --exec babel-node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uyu423/yowu-open-api-server.git"
+  },
+  "keywords": [
+    "api",
+    "openapi"
+  ],
+  "author": {
+    "name": "Yowu Yu",
+    "email": "uyu423@gmail.com",
+    "url": "http://luckyyowu.tistory.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/uyu423/yowu-open-api-server/issues"
+  },
+  "homepage": "https://github.com/uyu423/yowu-open-api-server#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "chai": "^4.0.2",
+    "dirty-chai": "^1.2.2",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "getconfig": "^3.1.0",
+    "knex": "^0.13.0",
+    "morgan": "^1.8.2",
+    "winston": "^2.3.1"
+  }
+}
