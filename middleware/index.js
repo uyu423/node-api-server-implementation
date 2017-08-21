@@ -1,1 +1,0 @@
-exports.sender = require('./sender');
