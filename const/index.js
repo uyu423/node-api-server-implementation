@@ -1,5 +1,1 @@
-import HTTP_STATUS from './HTTP_STATUS';
-
-export {
-  HTTP_STATUS,
-};
+exports.HTTP_STATUS = require('./HTTP_STATUS');

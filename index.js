@@ -1,12 +1,11 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import morgan from 'morgan';
-import console from 'winston';
-import config from 'getconfig';
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+const config = require('getconfig');
 
-import { HTTP_STATUS } from './const';
-import { sender } from './middleware';
-import HttpError from './HttpError';
+const { HTTP_STATUS } = require('./const');
+const { sender } = require('./middleware');
+const HttpError = require('./HttpError');
 
 const app = express();
 
@@ -59,5 +58,5 @@ app.all('*', (request, response, next) => {
 }, sender);
 
 app.listen(config.PORT, () => {
-  console.info(`API Server Listening ${config.PORT} port !!`);
+  console.log(`API Server Listening ${config.PORT} port !!`);
 });

@@ -59,3 +59,6 @@ typings/
 
 # config files
 config/default.js
+config/localhost.js
+config/development.js
+config/production.js

@@ -1,12 +1,12 @@
-import _ from 'lodash';
-import winston from 'winston';
-import { HTTP_STATUS } from '../const';
+const _ = require('lodash');
+const winston = require('winston');
+const { HTTP_STATUS } = require('../const');
 
 function errorHandler(request, response, error) {
   winston.error(error.message);
 }
 
-export default function sender(request, response) {
+module.exports = function sender(request, response) {
   const statusCode = response.statusCode || 500;
   if (statusCode >= 400) errorHandler(request, response, response.error);
   response.status(statusCode).json({
@@ -16,4 +16,4 @@ export default function sender(request, response) {
       rows: response.rows || [],
     },
   });
-}
+};

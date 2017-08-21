@@ -1,5 +1,1 @@
-import sender from './sender';
-
-export {
-  sender,
-};
+exports.sender = require('./sender');

@@ -1,4 +1,4 @@
-export default class HttpError extends Error {
+module.exports = class HttpError extends Error {
   constructor(params) {
     super();
     const error = params || {};
@@ -6,4 +6,4 @@ export default class HttpError extends Error {
     this.code = error.code || 'UNEXPECTED_ERROR';
     this.message = error.message || 'Occur Unexpected Error';
   }
-}
+};

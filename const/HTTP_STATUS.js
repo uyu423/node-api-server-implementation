@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   SUCCESS: 200,
   NO_CONTENTS: 204,
   REDIRECT: 301,

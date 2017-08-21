@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Yowu's Open APIs",
   "main": "index.js",
+  "engines": {
+    "node": ">=7.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "localhost": "./node_modules/.bin/cross-env NODE_ENV=localhost ./node_modules/.bin/nodemon --exec ./node_modules/.bin/babel-node ./index.js"
+    "localhost": "./node_modules/.bin/cross-env NODE_ENV=localhost ./node_modules/.bin/nodemon ./index.js"
   },
   "repository": {
     "type": "git",
@@ -26,9 +29,6 @@
   },
   "homepage": "https://github.com/uyu423/yowu-open-api-server#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-preset-env": "^1.5.1",
     "chai": "^4.0.2",
     "dirty-chai": "^1.2.2",
     "eslint": "^3.19.0",
